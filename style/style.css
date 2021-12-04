@@ -82,22 +82,25 @@ header a:hover{
     padding-top: 30px;
 }
 
+
 #Page aside{
     padding-left: 20%;
 }
 
 .posts h1{
-    color: #ffc300;
+    color: #ffc400;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 900;
     font-size: 25px;
     padding-left: 5px;
+    text-shadow: 0.01em 0.01em 0.2em #f2c83f;
 }
 
 .posts h2{
     color: #4f4a4f;
     font-size: 12px;
     padding-left: 10px;
+    font-weight: normal;
 }
 
 .posts img{
@@ -114,6 +117,11 @@ header a:hover{
     margin-bottom: 25px;
 }
 
+aside div{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
 aside h1{
     background-color: #ddd;
     color: #3c3a3c;
@@ -123,3 +131,43 @@ aside p, aside a{
     font-size: 10px;
 }
 
+hr{
+    border: 0;
+	border-top: 1px solid #ccc;
+}
+
+aside nav a{
+    font-size: 15px;
+}
+
+aside nav li{
+    padding-top: 2px;
+}
+
+footer{
+    height: 100px;
+    text-align: center;
+    background-color: #ffc300;
+    color: white;
+    position: relative;
+}
+
+footer h1{
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+footer h1, footer p{
+    height: 50px;
+}
+
+@media screen and (max-width: 650px) {
+    aside{
+        display: none;
+    }
+
+    #Page{
+        display: block;
+        padding: 30px;
+    }
+}
